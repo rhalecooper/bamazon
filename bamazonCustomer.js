@@ -90,7 +90,7 @@ function takeOrder() {
                 var stock_quantity  = res[0].stock_quantity
                 
                 console.log(" ");
-                console.log("  You are ordering " + answer.itemCount + " of item " + product_name + " (" + answer.itemID+ ")" )
+                console.log("  You are ordering " + answer.itemCount + " of item " + product_name + " (#" + answer.itemID+ ")" )
                 console.log(" ");
 
                 fillOrder(answer.itemID, answer.itemCount, price, stock_quantity )
@@ -141,7 +141,7 @@ for (i=0;i<20;i++) {
 console.log ("   ____                                                     ")                                                     
 console.log ("  |  _ \\                                                   ")                                                  
 console.log ("  | |_) |   __ _   _ __ ___     __ _   ____   ___    _ __   ") 
-console.log ("  |  _ <   / _` | | '_ ` _ \\   / _` | |_  /  / _ \\  | '_\\  ") 
+console.log ("  |  _ <   / _` | | '_ ` _ \\   / _` | |_  /  / _ \\  | '_ \\  ") 
 console.log ("  | |_) | | (_| | | | | | | | | (_| |  / /  | (_) | | | | | ") 
 console.log ("  |____/   \\__,_| |_| |_| |_|  \\__,_| /___|  \\___/  |_| |_| ") 
 console.log ("                                                            ")                                                    

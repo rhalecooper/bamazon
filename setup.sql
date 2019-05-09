@@ -87,6 +87,14 @@ UNION ALL
    42 as `stock_quantity`
    where 0 = (select count(item_id) from `bamazon`.`products` where product_name = "Little Drill")
 ;
+use bamazon;
 
-select product_name from bamazon.products 
+select * from bamazon.products ;
 
+update products 
+SET stock_quantity = stock_quantity - 2
+where item_id = 1;
+
+select * from bamazon.products ;
+
+update products set stock_quantity = 12 where stock_quantity = 0
